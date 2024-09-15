@@ -3,6 +3,7 @@
     
 <!-- Mirrored from themegenix.net/html/bemet/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 27 Nov 2023 02:25:48 GMT -->
 <head>
+        <base href="/">
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <title>@yield('title')</title>
@@ -68,9 +69,9 @@
                             <div class="header-top-right">
                                 <div class="header-top-menu">
                                     <ul class="list-wrap">
-                                        <li><a href="contact.html">Help</a></li>
-                                        <li><a href="contact.html">Support</a></li>
-                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="{{ route('account.login')}}">Login</a></li>
+                                        <li><a href="{{ route('account.register')}}">Register</a></li>
+                                        <li><a href="contact.html">Logout</a></li>
                                     </ul>
                                 </div>
                                 <div class="header-top-social">
